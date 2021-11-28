@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\ReservationController;
+use App\Http\Controllers\ChefsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,6 +30,14 @@ Route::get('/deletefood/{id}', [AdminController::class, 'deletefood'])->name('de
 Route::get('/updatefood/{id}', [AdminController::class, 'updatefood'])->name('updatefood');
 Route::post('/updatefooditem/{id}', [AdminController::class, 'updatefooditem'])->name('updatefooditem');
 
+Route::get('/reservation', [ReservationController::class, 'index'])->name('reservation');
+Route::post('/addReservation', [ReservationController::class, 'store'])->name('addReservation');
+
+Route::post('/addChefs', [ChefsController::class, 'store'])->name('addChefs');
+Route::get('/chefs', [ChefsController::class, 'index'])->name('chefs');
+Route::get('/deleteChef/{id}', [ChefsController::class, 'destroy'])->name('deleteChef');
+Route::post('/updateChef/{id}', [ChefsController::class, 'update'])->name('updateChef');
+Route::get('/updateChefdetail/{id}', [ChefsController::class, 'updateChefdetail'])->name('updateChefdetail');
 
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {

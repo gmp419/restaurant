@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Models\User;
 use App\Models\Food;
+use App\Models\Reservation;
 
 class AdminController extends Controller
 {
@@ -85,8 +86,5 @@ class AdminController extends Controller
        
     }
 
-        // $image = $request->image;
-        // $imagename = time().'.'.$image->getClientOriginalExtension();
-        // $request->image->move('foodimages', $imagename);
-        // $data->image = $imagename;
+    
 }
