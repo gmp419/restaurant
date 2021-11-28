@@ -24,6 +24,15 @@
               <span class="menu-icon">
                 <i class="mdi mdi-playlist-play"></i>
               </span>
+              <span class="menu-title">Add Food Items</span>
+            </a>
+          </li>
+
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="{{route('fooditems')}}">
+              <span class="menu-icon">
+                <i class="mdi mdi-playlist-play"></i>
+              </span>
               <span class="menu-title">FoodMenu</span>
             </a>
           </li>

@@ -23,6 +23,11 @@ Route::get('/deleteusers/{id}', [AdminController::class, 'deleteuser'])->name('d
 
 Route::get('/foodmenu', [AdminController::class, 'foodmenu'])->name('foodmenu');
 Route::post('/uploadfood', [AdminController::class, 'uploadfood'])->name('uploadfood');
+Route::get('/fooditems', [AdminController::class, 'fooditems'])->name('fooditems');
+Route::get('/deletefood/{id}', [AdminController::class, 'deletefood'])->name('deletefood');
+Route::get('/updatefood/{id}', [AdminController::class, 'updatefood'])->name('updatefood');
+Route::post('/updatefooditem/{id}', [AdminController::class, 'updatefooditem'])->name('updatefooditem');
+
 
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {

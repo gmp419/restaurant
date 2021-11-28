@@ -1,5 +1,6 @@
 <!-- plugins:js -->
 <script src="admin/assets/vendors/js/vendor.bundle.base.js"></script>
+<script src="https://use.fontawesome.com/cf88fe4ec1.js"></script>
     <!-- endinject -->
     <!-- Plugin js for this page -->
     <script src="admin/assets/vendors/chart.js/Chart.min.js"></script>
